@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+/* Header Bar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    z-index: 1000;
+}
+
+/* Top-Level Menu */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 10px 20px; /* add horizontal padding for wider layout */
+    position: relative;
+    background-color: red;
+}
+
+nav ul li {
+    position: relative;
+    padding: 20px 30px; /* make the box bigger */
+    margin: 10px;
+    border: 3px solid black;
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 0; /* make the anchor inside take space */
+}
+
+
+nav ul li:hover > a,
+nav ul li a:hover {
+    color: darkorchid;
+}
+
+/* Submenu */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: teal;
+    border: 2px solid black;
+    min-width: 180px;
+    z-index: 999;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul li ul li {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: teal;
+}
+
+nav ul li ul li a {
+    color: white;
+}
+
+nav ul li ul li a:hover {
+    color: orange;
+}
+
+
+main {
+    padding-top: 80px;
+    background-image: url('bg.png');
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+h2 {
+    margin: 100px 0 0 160px;
+}
+
+.firsth2 {
+    margin-top: 300px;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 50px 100px 20px 165px;
+    font-weight: 600;
+    margin-right: 150px;
+    margin-left: 175px;
+    line-height: 30px;
+}

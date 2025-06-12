@@ -1,0 +1,35 @@
+body{
+
+    background: rgb(255, 192, 203) url('heart-svgrepo-com.svg') no-repeat fixed center center; 
+    background-size: contain;           
+    margin: 0;
+    padding: 0;
+    font-family: "Playwrite DK Loopet", cursive;
+
+}
+
+ul{
+    list-style-type: none;
+    margin: 175px 475px;
+}
+
+ul>li{
+    margin: 30px;
+}
+
+a:link{
+    color: rgb(235, 94, 85);
+    text-decoration: none;
+}
+
+a:hover, a:visited:hover {
+    color: red;
+}
+
+a:visited {
+    color: rgb(235, 94, 85);
+}
+
+
+
+
